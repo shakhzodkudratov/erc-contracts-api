@@ -79,9 +79,9 @@ export default function (f) {
         }
 
         const data = {
-            rpcUrl: BNB_CHAIN_RPC_URL,
+            rpcUrl: request.query.rpcUrl,
             chainId: network.chainId,
-            contractAddress: MIKE_TOKEN_ADDRESS,
+            contractAddress: request.query.contractAddress,
             ...properties,
         }
 
